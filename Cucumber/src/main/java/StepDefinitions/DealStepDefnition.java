@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -28,6 +29,8 @@ public class DealStepDefnition {
 	 driver.get("https://www.freecrm.com/index.html");
 	 driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	driver.manage().window().maximize();
+//	WebDriverWait wait = new WebDriverWait(driver, 30);
+//	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("class")));
 	 }
 	 
 	 @SuppressWarnings("deprecation")
