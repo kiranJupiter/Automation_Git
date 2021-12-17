@@ -1,4 +1,6 @@
 package Pure_java;
+import java.util.*;
+
 
 public class Stars_Pattern {
 	public static void main(String[] args) {

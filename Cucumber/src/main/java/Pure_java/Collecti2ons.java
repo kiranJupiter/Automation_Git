@@ -1,7 +1,7 @@
 package Pure_java;
-
-import java.util.ArrayList;
-
+import java.util.*;
+import java.io.*;
+import java.lang.*;
 public class Collecti2ons {
 
 	public static void main(String[] args) {
@@ -9,8 +9,7 @@ public class Collecti2ons {
 		  ArrayList<String> l1=new ArrayList<String>();
 l1.add("Pipe");
 l1.add("todo");
-l1.add("1285");
-
+System.out.println(l1);
 
 	}
 
