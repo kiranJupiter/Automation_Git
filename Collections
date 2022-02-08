@@ -1,0 +1,56 @@
+package Learning_Java;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class Learning_Collections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Sorting Ascending or descending using Arraylist and also to find 2nd largest no ");
+		ArrayList<Integer> n = new ArrayList<Integer>();
+		n.add(25);
+		n.add(58);
+		n.add(77);
+		n.add(44);
+		n.add(19);
+		System.out.println("Before sorting" + n);
+		Collections.sort(n);
+		System.out.println("After sorting" + n);
+		int sz = n.size();
+		System.out.println("Size is " + sz);
+		System.out.println("Second largest no is " + n.get(sz - 2));
+		Collections.sort(n, Collections.reverseOrder());
+		System.out.println("In reverse order" + n);
+		Learning_Collections.Set_section();
+		Learning_Collections.Map_Section();
+
+	
+}
+
+	public static void Set_section() {
+		HashSet<Integer> s1 = new HashSet<Integer>();
+		s1.add(55);
+		s1.add(55);
+		s1.add(68);
+		s1.add(85);
+		s1.add(null);	
+		System.out.println("\n");
+		System.out.println("from HashSet" + s1);
+	}
+	
+	public static void Map_Section() {
+		 HashMap<String, Integer> map = new HashMap<>();
+		 
+	        map.put("vishal", 30);
+	        map.put("sachin", 30);
+	        map.put("vaibhav", 35);
+	        map.put(null, null);
+	        map.put(null, null);
+	        System.out.println("\n");
+	        System.out.println("from map" + map);
+	 
+	}
+}
